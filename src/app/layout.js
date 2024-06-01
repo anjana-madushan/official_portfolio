@@ -17,8 +17,7 @@ export default function RootLayout({ children }) {
           <div className="h-24">
             <NavBar />
           </div>
-          <div className="h-[calc(100vh-8rem)]"></div>
-          {children}
+          <div className="h-[calc(100vh-8rem)]">{children}</div>
         </div>
       </body>
     </html>
