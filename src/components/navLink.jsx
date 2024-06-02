@@ -10,8 +10,8 @@ export const NavLink = ({ links }) => {
   return (
     <>
       {links.map((link) => (
-        <div className={`rounded p-1 ${pathName === link.url && "bg-black text-white"}`}>
-          <Link href={link.url} key={link.title}>{link.title}</Link>
+        <div className={`rounded p-1 ${pathName === link.url && "bg-black text-white"}`} key={link.title}>
+          <Link href={link.url} >{link.title}</Link>
         </div>
       ))}
     </>
