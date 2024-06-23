@@ -1,10 +1,13 @@
+"use client";
+
 import { ExperienceList } from '@/components/experinceList'
 import React from 'react'
 
 const Page = () => {
+
   return (
-    <div className='h-full overflow-scroll'>
-      <div className='p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flax flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64'>
+    <div className='h-full overflow-y-auto lg:flex'>
+      <div className='p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:1/2'>
         <div className='flex flex-col gap-12 justify-center'>
           <h1 className='font-bold text-2xl'>BIOGRAPHY</h1>
           <p className='text-lg'>I am a fourth-year undergraduate student pursuing a BSc (Hons) in Information Technology with
@@ -35,6 +38,9 @@ const Page = () => {
             <ExperienceList />
           </div>
         </div >
+        <div className='hidden lg:block w-1/3 xl:1/2'>
+
+        </div>
       </div >
     </div>
   )
